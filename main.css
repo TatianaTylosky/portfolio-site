@@ -47,6 +47,13 @@
 	z-index: 3;
 }
 
+i {
+	color: white;
+	text-shadow: 0;
+	padding: 10px;
+	font-size: 50px;
+}
+
 /*.menu_items {
 	position: fixed;
 }*/
