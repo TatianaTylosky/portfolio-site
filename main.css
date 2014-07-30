@@ -1,69 +1,58 @@
+/*Welcome to Tatiana's portfolio CSS file*/
 
+/*I know how to load custom fonts via @font-face*/
+/*There are three different font extentions .ttf*/
 
 @font-face {
     font-family: DINCondensed;
     src: url(DINCondensed.ttf);
 }
 
-.bounce {
-	animation-duration: 3s;
-	animation-name: bloop;
-}
-
-/*@keyframes bloop{
-
-	from {
-	width: 150%;
-	}
-
-	to {
-	width: 100%;
-	}
-}*/
-
-
+/*Keyframes are awesome! They let you set tranformations over time*/
 @-webkit-keyframes bouncy-icons {
-  0,
-  100% {
+  0, 100% {
     -webkit-transform: translate(0, 0);
   }
   50% {
-    -webkit-transform: translate(0, -5px);
+    -webkit-transform: translate(0, 5px);
   }
 }
 
 .bounce {
-  -webkit-animation: bouncy-icons 2s infinite;
-  /* Safari 4+ */
-
+  -webkit-animation: bouncy-icons 2s ease-in-out infinite ;
+  /* Safari 4+ */ 
 }
 
-.menu {
+/*.menu {
 	height: 70px;
 	width: 100%;
 	position: fixed;
 	opacity: 1;
 	box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
 	z-index: 3;
-}
+}*/
 
+
+/*imports icons via font awesome*/
 i {
 	color: white;
-	text-shadow: 0;
-	padding: 10px;
+	padding: 5px;
 	font-size: 50px;
 }
 
-/*.menu_items {
-	position: fixed;
-}*/
+/*Gives my icons a nice moon like glow*/
+.glow {
+	text-shadow: 0px -6px 30px rgba(255, 255, 255, 1);
+}
 
+/*An invisible div so that I can space out some of my other divs*/
 .block {
 	height: 75px;
 	width: 100%;
 	position: relative;
 }
 
+/*My picture customly made into a circle of my choosing*/
 .avatar {
     width:150px;
     height:150px;
@@ -81,12 +70,13 @@ i {
     top: 25px;
 }
 
-.arrow {
-	width:100px;
-	position:relative;
-	bottom:50px;
-	left:100px;
-}
+/*.arrow {
+	margin-right: 22%;
+	margin-left: 46%;
+	position:fixed;
+	font-size: 100px;
+	bottom: 0px;
+}*/
 
 .about {
 	height: auto;
@@ -100,22 +90,27 @@ i {
     padding-left: 115px;
     padding-right: 115px;
     font-size: 50px;
-/*    border-radius: 15px;*/
+    border-radius: 15px;
 /*    top: -335px;*/
     box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
     bottom: 50px;
+    transition: background-color 3s ease-in-out;
+    background-color: rgba(246, 65, 0, 0.1);
+}
+
+.about:hover {
+	background-color:  rgba(76, 76, 255, 0.38);
 }
 
 p {
     color: white;
-    /*text-shadow: -1px 0 #064CFF, 0 1px darksalmon, 1px 0 darksalmon, 0 -1px darksalmon;*/
 	text-shadow:
 	5px 0px 0px rgba(255, 150, 149, .5),
-	-5px 0px 0px rgba(142, 150, 255, .5);  
-
+	-5px 0px 0px rgba(142, 150, 255, .5),
+	-4px -3px 0px rgba(150, 150, 150, 1);;
 
     font-family: DINCondensed;
-    background-color:  rgba(76, 76, 255, 0.38);
+    /*background-color:  rgba(76, 76, 255, 0.38);*/
 }
 
 caption {
@@ -130,7 +125,15 @@ caption {
 }
 
 
-
+/*.light_switch {
+	height: 50px;
+	width: 25px;
+	background-color: white;
+	position: fixed;
+	left: 0px;
+	top: 50%;
+}
+*/
 
 .about a {
 	color: inherit;
@@ -139,12 +142,12 @@ caption {
 }
 
 body {
-	background-image:url('background_tea.jpg');
+	background-image:url('https://s3.amazonaws.com/ooomf-com-files/hGibbjg0Rb2fUIoMtU5l__DSC8099.jpg');
     background-repeat: no-repeat;
     background-position: center;
 	background-attachment: fixed;
 	background-size:1500px;
-	background-color: green;
+	background-color: black;
 	padding: 0px;
 	margin: 0px;
 }
@@ -152,8 +155,7 @@ body {
 table {
 	padding:0px;
 	/*margin: 0 auto;*/
-	margin-right: 20%;
-	margin-left: 20%;
+	margin-left: 13%;
 }
 
 .panel {
@@ -163,7 +165,8 @@ table {
 	padding: 0;
 	text-align: center;
 	box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
-	transition: background-color 0.5s ease;
+	transition: background-color 0.5s cubic-bezier(1, 0, 1, 2);
+	/*transition: background-color 0.5s ease;*/
 	font-family: DINCondensed;
 }
 
@@ -220,4 +223,24 @@ h2 {
 	font-size: 50px;
 	margin: 0px;
 	padding: 40px;
+}
+
+nav {
+	padding-left: 15%;
+	height: 70px;
+	width: 100%;
+	position: fixed;
+	opacity: 1;
+	box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
+	z-index: 3;
+	transition: background-color 2s ease-in-out;
+}
+
+nav:hover {
+	background-color: rgba(76, 76, 255, 0.38);
+}
+
+nav i {
+	padding-left: 100px;
+	padding-right: 100px;
 }
