@@ -140,6 +140,10 @@ caption {
 	text-decoration: none;
 }
 
+a {
+	target:_blank;
+}
+
 body {
 	background-image:url('https://s3.amazonaws.com/ooomf-com-files/hGibbjg0Rb2fUIoMtU5l__DSC8099.jpg');
     background-repeat: no-repeat;
