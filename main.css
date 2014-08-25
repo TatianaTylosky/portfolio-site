@@ -41,7 +41,7 @@ i {
 
 /*Gives my icons a nice moon like glow*/
 .glow {
-	text-shadow: 0px -6px 30px rgba(255, 255, 255, 1);
+	text-shadow: 0px -6px 20px rgba(255, 255, 255, 1);
 }
 
 /*An invisible div so that I can space out some of my other divs*/
@@ -53,8 +53,8 @@ i {
 
 /*My picture customly made into a circle of my choosing*/
 .avatar {
-    width:150px;
-    height:150px;
+    width:140px;
+    height:140px;
     margin: 10px;
     border-radius: 500px;
     box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
@@ -78,6 +78,44 @@ i {
 	z-index: 5;
 }
 
+.blue {
+	color: rgba(76, 76, 255, 0.38);
+}
+
+
+.login {
+	height: auto;
+	position: relative;
+	opacity: 1;
+	text-align: right;
+	width: 21%;
+    margin: 0 auto;
+    padding: 25px;
+    font-size: 30px;
+/*    border-radius: 15px;*/
+/*    top: -335px;*/
+    box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
+    top: 125px;
+/*    transition: background-color 3s ease-in-out;*/
+/*    background-color: rgba(246, 65, 0, 0.1);*/
+	color: white;
+}
+
+input[type=submit] {
+	width: 100px;
+	color: white;
+	border: 0;
+	font-size: 25px;
+	background-color: transparent;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+input[type=text] {
+	color: white;
+	font-size: 20px;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	width: 120px;
+}
 
 .about {
 	height: auto;
@@ -87,17 +125,17 @@ i {
 	width: 75%;
     margin: 0 auto;
     padding: 10px;
-    font-size: 75px;
+    font-size: 60px;
 /*    border-radius: 15px;*/
 /*    top: -335px;*/
     box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
     bottom: 50px;
-    transition: background-color 3s ease-in-out;
+/*    transition: background-color 3s ease-in-out;*/
 /*    background-color: rgba(246, 65, 0, 0.1);*/
 }
 
 .about:hover {
-	background-color:  rgba(76, 76, 255, 0.38);
+/*	background-color:  rgba(76, 76, 255, 0.38);*/
 }
 
 p {
@@ -106,8 +144,7 @@ p {
 	5px 0px 0px rgba(255, 150, 149, .5),
 	-5px 0px 0px rgba(142, 150, 255, .5),
 	-4px -3px 0px rgba(150, 150, 150, 1);;*/
-
-    font-family: DINCondensed;
+	font-family: DINCondensed;
     /*background-color:  rgba(76, 76, 255, 0.38);*/
 }
 
@@ -120,7 +157,7 @@ p {
 
 
 body {
-	background-image:url('https://s3.amazonaws.com/ooomf-com-files/hGibbjg0Rb2fUIoMtU5l__DSC8099.jpg');
+	background-image:url('http://31.media.tumblr.com/cd40dba26eabfc0901892be37f207cf6/tumblr_n7fgl3sQS61st5lhmo1_1280.jpg');
     background-repeat: no-repeat;
     background-position: center;
 	background-attachment: fixed;
@@ -136,10 +173,11 @@ table {
 }
 
 .projects {
-	margin-left: 25%;
+	margin-left: 10%;
 	color:white;
-	font-size:100px;
+	font-size:70px;
 	position: relative;
+	text-align: center;
 	width:500px;
 }
 
@@ -148,13 +186,13 @@ table {
 	height: 200px;
 	position: relative;
 	box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
-	transition: background-color 0.5s cubic-bezier(1, 0, 1, 2);
+/*	transition: background-color 0.5s cubic-bezier(1, 0, 1, 2);*/
 	font-family: DINCondensed;
 	display: inline;
 }
 
 .panel:hover {
-	background-color: rgba(76, 76, 255, 0.38);
+/*	background-color: rgba(76, 76, 255, 0.38);*/
 /*	-webkit-transform: rotateY(130deg);
     transform: rotateY(130deg);*/
 }
@@ -209,21 +247,21 @@ h2 {
 }
 
 nav {
-	padding-left: 15%;
+	padding-left: 2%;
 	height: 70px;
 	width: 100%;
 	position: fixed;
 	opacity: 1;
 	box-shadow: 0px 6px 80px 18px rgba(0,0,0,0.5);
 	z-index: 3;
-	transition: background-color 2s ease-in-out;
+/*	transition: background-color 2s ease-in-out;*/
 }
 
 nav:hover {
-	background-color: rgba(76, 76, 255, 0.38);
+/*	background-color: rgba(76, 76, 255, 0.38);*/
 }
 
 nav i {
-	padding-left: 100px;
-	padding-right: 100px;
+	padding-left: 40px;
+	padding-right: 90px;
 }

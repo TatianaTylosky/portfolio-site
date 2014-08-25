@@ -14,21 +14,24 @@
 		<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 		<!-- This loads a font type from google -->
 		<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-	</head>
+		<link href='http://fonts.googleapis.com/css?family=Lusitana' rel='stylesheet' type='text/css'>	
+
+		<script> 
+		    $(function(){
+		      $("#nav").load("nav.html"); 
+		    });
+		</script> 
+
+		</head>
 
 	<body>
-		<nav>
-			<!-- using the 'i' tag I can automatically load icons from font awesome by giving them the proper class-->
-			<a target="_blank" href="https://github.com/TatianaTylosky"><i class="glow bounce fa fa-github"></i></a>
-			<a href="mailto:tatianatylosky@gmail.com"><i class="glow bounce fa fa-envelope"></i></a>
-			<a target="_blank" href="http://tatianatylosky.tumblr.com/"><i class="glow bounce fa fa-tumblr"></i></a>
-			<a target="_blank" href="https://twitter.com/tatianatylosky"><i class="glow bounce fa fa-twitter"></i></a>
-		</nav>
+		<div id ="nav"> </div>
+
 		<!-- Hey Tim I put this div with the class "block" here to put space in between my menu bar and my about page, is this a poor way of doing it? -->
 		<div class="block"></div>
 		<div class="avatar"></div>
 		<div class="about">
-			<p>GROWING AND HACKING <a href="http://www.thinkful.com">@THINKFUL</a>,<br>ADVISOR <a href="http://alphasigmatau.org/">@ALPHASIGMATAU</a>,<br>FRONT END DEVELOPER,<br>D&D ALIGNMENT: CHAOTIC GOOD</p>
+			<p>GROWING AND HACKING <a class="blue" href="http://www.thinkful.com">@THINKFUL</a>,<br>ADVISOR <a href="http://alphasigmatau.org/">@ALPHASIGMATAU</a>,<br>FRONT END DEVELOPER,<br>D&D ALIGNMENT: CHAOTIC GOOD</p>
 		</div>
 		<!-- I did inline styling on purpose because I wanted this icon bigger than the other font awesome icons -->
 		<center><i style="font-size:100px" class="glow arrow bounce fa fa-chevron-down"></i></center>
@@ -38,10 +41,7 @@
 
 		<!-- These aren't linked yet, they will be -->
 		<div class="projects">
-        	<div class="panel">FIBONACCI</div>
-        	<div class="panel">FIIZBUZZ</div><br>
-			<div class="panel">AJAX/API</div>
-			<div class="panel">OTHER</div>
+        	<div class="panel">PROJECT PORTFOLIO<br>COMING SOON</div>
         </div>
 
 		<div class="block"></div>
